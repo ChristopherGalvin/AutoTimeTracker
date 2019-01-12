@@ -49,7 +49,7 @@ namespace Project_PeopleHRLogin
             {
                 CurrentRuntime currentRunTime = new CurrentRuntime(currentTimeType);
 
-                if (!currentRunTime.Run)
+                if (currentRunTime.Run)
                 {
                     var chromeOptions = new ChromeOptions();
                     //chromeOptions.AddArguments("headless");
@@ -76,7 +76,7 @@ namespace Project_PeopleHRLogin
 
                         try
                         {
-                            if (currentRunTime.AtHome)
+                            if (!currentRunTime.AtHome)
                             {
                                 // Write date in and out
 
