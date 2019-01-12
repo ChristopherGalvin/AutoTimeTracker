@@ -60,14 +60,14 @@ namespace Project_PeopleHRLogin
 
 
                         // Log into the PeopleHR system
-                        browser.Url = "https://riskex.peoplehr.net/";
+                        browser.Url = ConfigurationManager.AppSettings["URL"];
                         browser.FindElementById("txtEmailId").SendKeys(ConfigurationManager.AppSettings["Username"]);
                         browser.FindElementById("txtPassword").SendKeys(ConfigurationManager.AppSettings["Password"]);
                         browser.FindElementById("btnLogin").Click();
 
 
                         //Navigate to the details page
-                        browser.Url = "https://riskex.peoplehr.net/Pages/LeftSegment/MyDetails.aspx";
+                        browser.Url = ConfigurationManager.AppSettings["URL"] + "Pages/LeftSegment/MyDetails.aspx";
 
                         Thread.Sleep(2000);
 
