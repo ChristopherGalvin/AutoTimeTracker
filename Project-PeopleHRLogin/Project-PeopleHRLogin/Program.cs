@@ -167,9 +167,7 @@ namespace Project_PeopleHRLogin
 
 
                     }
-
-                    Console.ReadLine();
-
+                    
                 }
 
             }
