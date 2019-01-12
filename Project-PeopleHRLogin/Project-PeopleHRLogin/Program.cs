@@ -76,7 +76,7 @@ namespace Project_PeopleHRLogin
 
                         try
                         {
-                            if (!currentRunTime.AtHome)
+                            if (currentRunTime.AtHome)
                             {
                                 // Write date in and out
 
